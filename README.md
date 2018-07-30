@@ -1,5 +1,4 @@
 # TwitterHomeMockUp
 
-[Imgur](https://i.imgur.com/HSeAu6R.png)
-
+[TwitterHomeUI](https://i.imgur.com/HSeAu6R.png)
 

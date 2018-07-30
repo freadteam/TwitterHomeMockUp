@@ -1,0 +1,432 @@
+header {
+	height: 50px;
+	border-bottom: 1px solid black;
+}
+
+body, #space{
+	background-color: rgba(105, 116, 126, 0.1);
+}
+
+header {
+	background-color: white;
+	display: flex;
+}
+
+.left_header {
+	display: inline-flex;
+	flex: 2;
+	padding-left: 100px;
+}
+
+.left_header  a {
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+.left_header a:first-child{
+	color: rgb(87 160 236);
+}
+
+.left_header a:not(first-child){
+	color: rgb(105 116 126);
+}
+.left_header  a:hover {
+	color: rgb(87 160 236);
+}
+.left_header  a + a {
+	margin-left: 10px;
+}
+
+.logo {
+	flex: 1;
+	margin: 0 auto;
+	padding-left: 90px;
+}
+
+.ellipse {
+	border-radius: 25px;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.right_header {
+	flex: 2;
+	padding-top: 7px;
+	display: inline-flex;
+}
+
+.tweetbutton {
+	width: 100px;
+	height: 40px;
+	color: white;
+	background: rgb(87 160 236);
+}
+
+.usericon {
+	margin-right: 10px;
+	/*ボタンやinputの文字に対してmiddle*/
+	vertical-align: middle;
+}
+
+.searchtext {
+	width: 220px;
+	height: 30px;
+	margin-right: 10px;
+	margin-left: 15px;
+
+}
+
+
+#space {
+	height: 5px;
+	width: 100%;
+}
+
+main {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+/*	position: relative;
+	top: -44px;*/
+}
+
+#left_menu {
+	/*width: 288px;*/
+	flex: 1;
+}
+
+#left_menu_top {
+	width: 288px;
+	background: white;
+}
+
+.left_position {
+	margin-left: 100px;
+}
+
+.cover_img  img {
+	object-fit: cover;
+}
+
+#user_info {
+	text-align: center;
+	width: 288px;
+	height: 90px;
+	background-color: white;
+	font-size: 15px;
+}
+
+#user_info span {
+	font-weight: bold;
+}
+
+.container {
+width: 288px;
+height: 70px;
+}
+
+.box {
+	font-size: 14px;
+	box-sizing: border-box;
+	width: 90px;
+	height:30px;
+	float: left;
+	padding: 10px;
+}
+
+.box div {
+	text-align: left;
+}
+
+
+.box .title {
+	color: rgb(105 116 126);
+}
+
+.box .figure {
+	color: rgb(87 160 236);
+	font-weight: bold;
+}
+
+#userphoto {
+	position: absolute;
+	top: 120px;
+	left: 110px;
+}
+
+#left_menu_bottom {
+	margin-top: 10px;
+	width: 288px;
+	background: white;
+}
+
+.flex_container {
+	display: flex;
+	width: 288px;
+}
+
+.row {
+	flex-direction: row;	
+}
+
+.column {
+	flex-direction: column;
+}
+
+.flex_item {
+	width: 100%;
+	
+}
+
+.flex_item > h4 {
+	text-align: center;
+}
+
+.flex_item > a {
+	font-size: 12px;
+	text-decoration: none;
+	color: rgb(87 160 236);
+	position: relative;
+	top: 20px;
+}
+
+.link {
+	color: rgb(87 160 236);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.link:hover {
+	text-decoration: underline;
+
+}
+
+.table_content {
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+#left_table span {
+	font-size: 12px;
+	color: rgb(105 116 126);
+}
+
+#left_table td {
+	margin-top: 10px;
+}
+
+#left_table {
+	margin:0px;
+	width: 100%;
+}
+
+#timeline {
+	width: 580px;
+	margin: 0 20px;
+	flex: 2;
+}
+
+#input_tweet {
+	float: left;
+	width: 100%;
+	height: 50px;
+	background:rgb(229 243 253);
+}
+
+#input_tweet img {
+	margin-left: 30px;
+	margin-top: 7.5px;
+}
+
+#input_tweet input {
+	margin-left: 10px;
+	position: relative;
+	top: -10px;
+	width:80%; 
+	height:30px;
+	border-radius: 10px;
+}
+
+
+.tweet {
+	height: auto;
+	background: white;
+	border-bottom: 1px solid rgb(105 116 126);
+}
+
+.tweet_icon{
+	width: 45px;
+	height: 45px;
+}
+
+.tweet_icon > img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.tweet_user {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.tweet_container {
+	margin-left: 65px;
+ 	display: flex;
+ 	width: 85%;
+}
+
+.tweet_user span {
+	margin-top: 10px;
+}
+
+.tweet_user span:nth-child(1) {
+	font-weight: bold;
+	margin-left: 5px;
+}
+.tweet_user span + span {
+	font-size: 12px;
+
+}
+
+.tweet_menu {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ .tweet_menu a {
+ 	margin-right: 50px;
+ 	text-decoration: none;
+ 	color: rgb(105 116 126);
+}
+
+ .tweet_menu a:hover {
+	color: rgb(87 160 236);
+}
+
+.next .tweet_container {
+	position: relative;
+	top: -45px;
+}
+
+.next + .next {
+	position: relative;
+	top: -40px;
+	border-top: 1px solid rgba(105, 116, 126, 0.1);
+}
+
+.right_position {
+	margin-right: 100px;
+}
+
+#right_menu {
+ flex: 1;
+
+}
+
+.right_menu_top {
+	display: flex;
+	background: white;
+}
+
+.right_item {
+	width: 100%;
+}
+
+.item_head {
+	display: flex;
+}
+
+#title_height {
+	height: 40px;
+}
+/*中央寄せがうまくいかない*/
+.right_subitme > h4 {
+	position: relative;
+	top: -10px;
+}
+
+.right_subitme > span {
+	font-size: 10px;
+	position: relative;
+	top: 12px;
+	left: -10px;
+}
+
+.right_subitme > span > a {
+	text-decoration: none;
+	color: rgb(87 160 236);
+}
+
+.right_subitme > span > a:hover {
+	text-decoration: underline;
+}
+
+.right_subitme {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.users {
+	height: 73px;
+}
+
+.followbutton {
+	width: 100px;
+	height: 35px;
+	color: white;
+	background: rgb(87 160 236);
+}
+
+.right_subitme > div > span:first-child {
+	font-weight: bold;
+}
+.right_subitme > div > span + span {
+	color: rgb(105 116 126);
+	font-size: 12px;
+}
+
+.right_button {
+	margin-top: 5px;
+}
+
+.right_item + .right_item {
+	border-bottom: 1px solid rgba(105, 116, 126, 0.1);
+}
+
+.blue_link {
+	color: rgb(87 160 236);
+	font-size: 11px;
+		padding-left: 15px;
+}
+
+.right_item:last-child {
+	height: 40px;
+	width: 95%;
+	padding-top: 20px;
+	border-bottom: 1px solid white;
+}
+
+.right_menu_bottom {
+	margin-top: 10px;
+	width: 100%;
+	background: white;
+}
+
+#links {
+	color: rgb(105 116 126);
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 1px solid gray;
+}
+
+.ad  {
+	height: 40px;
+	padding-top: 20px;
+}
+
+.ad:hover {
+	text-decoration: underline;
+}

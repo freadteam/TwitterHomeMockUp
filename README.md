@@ -1,3 +1,3 @@
 # TwitterHomeMockUp
 
-[TwitterHomeUI](https://www.evernote.com/l/Ac_feMaC0WtKJo0zeEbyZyM_-9nkUKpl4tU)
+[TwitterHomeUI](https://www.evernote.com/l/Ac_tuJJrT3FH0K7rIxurS2IKEjkv0lK14uo)

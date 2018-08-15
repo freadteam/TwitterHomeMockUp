@@ -9,65 +9,77 @@
 	<link rel="shortcut icon" href="images/5.png">
 </head>
 <body>
-	<footer>
-		<div class="footer_container">
-			<div class="footer_item left_position">
-				<div>
-					<a href=""><i class="fas fa-home">ホーム</i></a>
-				</div>
-				<div>
-					<a href=""><i class="far fa-clock">モーメント</i></a>
-				</div>
-				<div>
-					<a href=""><i class="far fa-bell">通知</i></a>
-				</div>
-				<div>
-					<a href=""><i class="far fa-envelope">メッセージ</i></a>
-				</div>
+	<header>
+		<div class="header_item left_position">
+			<div class="firstLeftHeaderItem">
+				<a href="">
+					<img src="images/home.png" width="23px" height="23px" class="headerImg">
+					ホーム
+				</a>
 			</div>
-			<div class="footer_item center">
-				<img src="images/5.png" width="45px" height="45px">
+			<div>				
+				<a href="" class="gray">
+					<img src="images/moment.png" width="23px" height="23px" class="headerImg">
+					モーメント
+				</a>
 			</div>
-			<div class="footer_item right_position flex_container">
-				<div>
-					<input type="text" name="search_text" class="eclipse">
-				</div>
-				<div>
-					<img src="images/2.jpg" width="40px" height="40px" class="circle">
-				</div>
-				<div>
-					<button class="eclipse">ツイート</button>
-				</div>
+			<div>
+				<a href="" class="gray">
+					<img src="images/bell.png" width="23px" height="23px" class="headerImg">
+					通知
+				</a>
+			</div>
+			<div>
+				<a href="" class="gray">
+					<img src="images/mail.png" width="23px" height="23px" class="headerImg">
+					メッセージ
+				</a>
+			</div>	
+		</div>
+
+		<div class="header_item center">
+			<img src="images/5.png" width="24px" height="21px">
+		</div>
+
+		<div class="header_item right_position flex_container">
+			<div>
+				<img src="images/search.png" width="20px" height="20px" class="firstRightHeaderItem">
+				<input type="text" name="search_text" class="searchKeyWord eclipse" placeholder="  キーワード検索">
+			</div>
+			<div>
+				<img src="images/2.jpg" width="40px" height="40px" class="circle">
+			</div>
+			<div>
+				<button class="tweetButton eclipse">ツイート</button>
 			</div>
 		</div>
-	</footer>
+	</header>
 
 	<main>	
 		<div class="main_container">
 
 			<div class="main_left_item column left_position">
-				
 				<div class="main_left_item column">
 					<div>
 						<img src="images/4.jpg" width="290px" height="97">
 					</div>
 					<div class="main_left_item column">
-						<div>
+						<div class="userNameInfo">
 							<h4>満島ひかり</h4>
 							<p style="color: rgb(124 136 148);">@hikarimitsushima</p>
 						</div>
-						<div class="main_left_item">
+						<div class="userInfoFigures">
 							<div class="left_info_block">
 								<p>ツイート</p>
-								<p class="blue">1,000</p>
+								<p class="figure">1,000</p>
 							</div>
 							<div class="left_info_block">
 								<p>フォロー</p>
-								<p class="blue">1,000</p>
+								<p class="figure">1,000</p>
 							</div>
 							<div class="left_info_block">
 								<p>フォロワー</p>
-								<p class="blue">1,000</p>
+								<p class="figure">1,000</p>
 							</div>
 						</div>
 					</div>
@@ -111,7 +123,10 @@
 						<img src="images/2.jpg" width="40px" height="40px" class="circle">
 					</div>
 					<div>
-						<input type="text" name="search_text" placeholder="いまどうしてる？" >
+						<input type="text" name="search_text" placeholder="  いまどうしてる？"  class="tweetInput">
+					</div>
+					<div class="addImage">
+						<img src="images/addImage.png" width="20px" height="20px">
 					</div>
 				</div>
 
@@ -169,9 +184,8 @@
 				</div>
 			</div>
 
-
 			<div class="main_right_item column right_position">
-				<div class="main_right_item">
+				<div class="main_right_item userTitle">
 					<h4>おすすめユーザー</h4>
 					<div class="flex_row">
 						<a href="" class="blue">・更新</a>
@@ -187,7 +201,7 @@
 							<h5>ひかり<span> @hikari</span></h5>
 						</div>
 						<div>
-							<button class="eclipse">フォロー中</button>
+							<button class="followButton eclipse">フォローする</button>
 						</div>
 					</div>
 				</div>
@@ -200,7 +214,7 @@
 							<h5>みつしま<span> @mistushima</span></h5>
 						</div>
 						<div>
-							<button class="eclipse">フォロー中</button>
+							<button class="followButton eclipse">フォローする</button>
 						</div>
 					</div>
 				</div>

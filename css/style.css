@@ -1,19 +1,24 @@
 header {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 46px;
 	border-bottom: 1px solid #C0C0C0;
 	background: white;
+	height: 46px;
+	width: 100%;
+	padding: 0 50px;
+	box-sizing: border-box;
 }
 
 body {
 	background: rgb(232 236 240);
 }
 
-
 img {
 	object-fit: cover;
+}
+
+#headerPosition {
+	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .circle {
@@ -24,14 +29,20 @@ img {
 	border-radius: 25px;
 }
 
-.left_position {
-	margin-right: auto;
-	margin-left: 127px;
+.headerLeftPosition {
+	margin-right:180px;
 }
 
-.right_position {
-	margin-left: auto;
-	margin-right: 127px;
+.headerRightPosition {
+	margin-left:180px;
+}
+
+.mainLeftPosition {
+	margin-right:12px; 
+}
+
+.mainRightPosition {
+	margin-left:12px;
 }
 
 .gray_space {
@@ -75,40 +86,49 @@ img {
 
 .headerImg {
 	vertical-align: middle;
+	width: 23px;
+	height:23px;
 }
 
-.header_item > div {
+.headerSubItem {
 	display: inline-flex;
 	align-items: center;
-	height:100%;
+	height:100%;	
 }
 
-.header_item > div > a {
-	font-family: monospace;
-	font-size: 13px;
+.leftHeaderLink {
 	text-decoration: none;
-	
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-/*.header_item > div: not(first-child) > a {
-	color: rgb(124 136 148);
-}
-*/
 .firstLeftHeaderItem  {
 	color: #1DA1F2;
 	border-bottom: 2px solid #1DA1F2;
 }
 
-.firstLeftHeaderItem > a {
+.firstLeftHeaderItemColor {
 	color: #1DA1F2;
 }
 
-.header_item > div > a:hover {
+.headerLinkHover:hover {
 	color: rgb(87 160 236);
+	cursor: pointer;
 }
 
-.header_item > div + div {
+.headerSubItem + .headerSubItem {
 	margin-left: 20px;
+}
+
+.fontawesomeSize {
+	font-size: 20px;
+}
+
+.leftHeaderTitle {
+	font-family: "ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif;
+	font-size: 13px;
+	margin-left: 6px;
 }
 
 .searchKeyWord {
@@ -117,6 +137,7 @@ img {
 	font-size: 12px;
 	background-color: #f5f8fa;
 	border: 1px solid #e6ecf0;
+	outline: 0;
 }
 
 .firstRightHeaderItem {
@@ -128,21 +149,29 @@ img {
 	background-color: #4AB3F4;
 	color:white;
 	border-style: none;
+	outline: 0;
 	font-size: 14px;
     font-weight: bold;
     width: 92px;
     height: 36px;
 }
 
+.tweetButton:hover {
+	background-color: #1da1f2;
+	cursor: pointer;
+}
+
 /*---------------header---------------*/
 
 /*---------------main---------------*/
 .main_container {
-	margin-top: 15px;
+	padding-top: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
+	box-sizing: border-box;
 }
+
 /*---------------left---------------*/
 .main_left_item {
 	background: white;
@@ -151,12 +180,16 @@ img {
 	width: 290px;
 }
 
-.main_left_item > div {
+.mainLeftItemLineHeight {
 	line-height: 1px;
 }
 
 .userNameInfo {
 	margin-left: 20px;
+}
+
+.userNameInfo p {
+	color: rgb(124 136 148);
 }
 
 .userInfoFigures {
@@ -166,7 +199,7 @@ img {
 	justify-content: flex-start;
 }
 
-.userInfoFigures > div > p:first-child {
+.userInfoFiguresTitle {
 	color: #657786;
 	font-weight: bold;
 	font-size: 13px;
@@ -188,7 +221,7 @@ img {
 	margin-left:10px;
 }
 
-.main_left_item > div > a {
+.mainLeftItemBlueSubLink {
 	font-size: 12px;
 	text-decoration: none;
 	color: #1DA1F2;
@@ -205,16 +238,15 @@ img {
 	width: 275px;
 }
 
-.left > div > a {
+.mainLeftItemBlueLink {
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #1DA1F2;
 }
 
-.left > div > p  {
+.userInoFigure {
 	font-size: 12px;
-	color: black;
 	line-height: 10px;
 	color: rgb(124 136 148);
 }
@@ -225,12 +257,15 @@ img {
 
 .user_icon {
 	position: relative;
-	top: -520px;
-	left: 131px;
-	width: 70px;
-	height: 70px;
-	margin:0px;
-	padding:0px;
+	top: 60px;
+	left: -590px;
+	width: 0px;
+	height: 0px;
+	margin:0;
+	padding:0;
+}
+
+.leftUserIcon {
 	border-radius: 50%;
 	border:solid 3px white;
 }
@@ -243,7 +278,7 @@ img {
 	margin-left: 0px;
 }
 
-.main_center_item{
+.main_center_item {
 	display: flex;
 	width: 590px;
 	background: white;
@@ -275,6 +310,7 @@ img {
 	border-radius: 10px;
 	width: 500px;
 	height: 30px;
+	outline: 0;
 	border: 1px solid rgb(206 230 249)
 }
 
@@ -293,22 +329,24 @@ img {
 	background: white;
 	width:100%;
 }
-.main_center_subitem > div {
+.mainDivPaddingLeft {
 	padding-left: 10px;
 }
 
-.main_center_subitem > div > span:first-child {
+.tweetUserName:first-child {
 	font-size: 15px;
 	font-weight: bold;
 }
 
-.main_center_subitem > div > span:last-child {
+.tweetUserName:last-child {
 	color: rgb(124 136 148);
 	font-size: 13px;
 }
 
-.main_center_subitem > .footer_item > a {
+.footerItem {
 	color: rgb(124 136 148);
+	margin-right: 50px;
+	font-size: 14px;
 }
 
 .tweet {
@@ -316,16 +354,16 @@ img {
 	width: 520px;
 }
 
+.tweetFont {
+	font-family: "Arial",sans-serif;
+	font-size: 14px;
+}
+
 .flex_incline {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 }
-
-.flex_incline > a {
-	margin-right: 50px;
-}
-
 
 /*---------------center--------------*/
 
@@ -343,19 +381,28 @@ img {
 	height: 45px
 }
 
-.main_right_item > div > a {
+.blueLink {
 	font-size: 10px;
 	text-decoration: none;
 	align-items: baseline;
 }
 
-.main_right_item > div {
+.alignCenter {
 	align-items: center;
 }
 
 .followButton {
 	color: #1DA1F2;
+	border-style: none;
+	outline: 0;
 	border: 1px solid #1DA1F2;
+	height: 30px;
+	width: 120px;
+}
+
+.followButton:hover {
+	background-color: rgba(29, 161, 242, 0.1);
+	cursor: pointer;
 }
 
 .user_info  {
@@ -364,16 +411,13 @@ img {
 	border-bottom: 1px solid #C0C0C0;
 }
 
-.user_info > div > img {
+.userInfoIcon {
 	margin-left: 10px;
+	width: 50px;
+	height:50px;
 }
 
-.user_name > div > button {
-	height: 30px;
-	width: 120px;
-}
-
-.user_name > div {
+.userNamePosition {
 	margin-left: 10px;
 	display: flex;
 	align-items: center;
@@ -395,9 +439,8 @@ img {
 	margin-bottom: 15px;
 }
 
-.ad + div > a {
+.adLink {
 	font-size: 12px;
-
 }
 
 

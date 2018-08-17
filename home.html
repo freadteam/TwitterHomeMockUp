@@ -10,47 +10,50 @@
 </head>
 <body>
 	<header>
-		<div class="header_item left_position">
-			<div class="firstLeftHeaderItem">
-				<a href="">
-					<img src="images/home.png" width="23px" height="23px" class="headerImg">
-					ホーム
-				</a>
+		<div id="headerPosition">
+			<div class="header_item headerLeftPosition">
+				<div class="firstLeftHeaderItem headerSubItem headerLinkHover">
+					<a href="" class="leftHeaderLink firstLeftHeaderItemColor">
+						 <i class="fas fa-home fontawesomeSize"></i>
+						<p class="leftHeaderTitle">ホーム</p>
+					</a>
+				</div>
+				<div class="headerSubItem">				
+					<a href="" class="gray leftHeaderLink headerLinkHover">
+						<i class="far fa-clock fontawesomeSize"></i>
+						<p class="leftHeaderTitle">モーメント</p>
+					</a>
+				</div>
+				<div class="headerSubItem">
+					<a href="" class="gray leftHeaderLink headerLinkHover">
+						<i class="far fa-bell fontawesomeSize">
+						</i>
+						<p class="leftHeaderTitle">通知</p>
+					</a>
+				</div>
+				<div class="headerSubItem">
+					<a href="" class="gray leftHeaderLink headerLinkHover">
+						<i class="far fa-envelope fontawesomeSize"></i>
+						<p class="leftHeaderTitle">メッセージ</p>
+					</a>
+				</div>	
 			</div>
-			<div>				
-				<a href="" class="gray">
-					<img src="images/moment.png" width="23px" height="23px" class="headerImg">
-					モーメント
-				</a>
-			</div>
-			<div>
-				<a href="" class="gray">
-					<img src="images/bell.png" width="23px" height="23px" class="headerImg">
-					通知
-				</a>
-			</div>
-			<div>
-				<a href="" class="gray">
-					<img src="images/mail.png" width="23px" height="23px" class="headerImg">
-					メッセージ
-				</a>
-			</div>	
-		</div>
 
-		<div class="header_item center">
-			<img src="images/5.png" width="24px" height="21px">
-		</div>
+			<div class="header_item center">
+				<img src="images/5.png" width="24px" height="21px">
+			</div>
 
-		<div class="header_item right_position flex_container">
-			<div>
-				<img src="images/search.png" width="20px" height="20px" class="firstRightHeaderItem">
-				<input type="text" name="search_text" class="searchKeyWord eclipse" placeholder="  キーワード検索">
-			</div>
-			<div>
-				<img src="images/2.jpg" width="40px" height="40px" class="circle">
-			</div>
-			<div>
-				<button class="tweetButton eclipse">ツイート</button>
+			<div class="header_item headerRightPosition">
+				<div class="headerSubItem">
+					<img src="images/search.png" width="20px" height="20px" class="firstRightHeaderItem">
+					<input type="text" name="search_text" class="searchKeyWord eclipse" placeholder="  キーワード検索">
+				</div>
+				<div class="headerSubItem">
+					<img src="images/2.jpg" width="40px" height="40px" class="circle">
+				</div>
+				<div class="headerSubItem">
+					<button class="tweetButton eclipse">ツイート</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -58,27 +61,27 @@
 	<main>	
 		<div class="main_container">
 
-			<div class="main_left_item column left_position">
+			<div class="main_left_item column mainLeftPosition">
 				<div class="main_left_item column">
 					<div>
 						<img src="images/4.jpg" width="290px" height="97">
 					</div>
-					<div class="main_left_item column">
+					<div class="main_left_item column mainLeftItemLineHeight">
 						<div class="userNameInfo">
 							<h4>満島ひかり</h4>
-							<p style="color: rgb(124 136 148);">@hikarimitsushima</p>
+							<p>@hikarimitsushima</p>
 						</div>
 						<div class="userInfoFigures">
 							<div class="left_info_block">
-								<p>ツイート</p>
+								<p class="userInfoFiguresTitle">ツイート</p>
 								<p class="figure">1,000</p>
 							</div>
 							<div class="left_info_block">
-								<p>フォロー</p>
+								<p class="userInfoFiguresTitle">フォロー</p>
 								<p class="figure">1,000</p>
 							</div>
 							<div class="left_info_block">
-								<p>フォロワー</p>
+								<p class="userInfoFiguresTitle">フォロワー</p>
 								<p class="figure">1,000</p>
 							</div>
 						</div>
@@ -89,35 +92,38 @@
 
 				<div class="main_left_item column">
 					<div class="main_left_item">
-						<div class="main_left_subitem">
+						<div class="main_left_subitem mainLeftItemLineHeight">
 							<h4>おすすめトレンド</h4>
 						</div>
 						<div class="main_left_subitem">
-							<a href="">変更する</a>
+							<a href="" class="mainLeftItemBlueSubLink">変更する</a>
 						</div>
 					</div>
-					<div class="main_left_item column left">
+					<div class="main_left_item column left mainLeftItemLineHeight">
 						<div>
-							<a href="">#満島ひかり</a>
-							<p class="gray">1,000件のツイート</p>
+							<a href="" class="mainLeftItemBlueLink">#満島ひかり</a>
+							<p class="gray userInoFigure">1,000件のツイート</p>
 						</div>
 					</div>
-					<div class="main_left_item column left">
+					<div class="main_left_item column left mainLeftItemLineHeight">
 						<div>
-							<a href="">カルテット</a>
-							<p class="gray">1,000件のツイート</p>
+							<a href="" class="mainLeftItemBlueLink">カルテット</a>
+							<p class="gray userInoFigure">1,000件のツイート</p>
 						</div>
 					</div>
-					<div class="main_left_item column left">
+					<div class="main_left_item column left mainLeftItemLineHeight">
 						<div>
-							<a href="">ペットボトル１本分</a>
-							<p class="gray">1,000件のツイート</p>
+							<a href="" class="mainLeftItemBlueLink">ペットボトル１本分</a>
+							<p class="gray userInoFigure">1,000件のツイート</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="main_center_item column">
+				<div class="user_icon">
+					<img src="images/2.jpg" width="70px" height="70px" class="circle leftUserIcon">	
+				</div>
 				<div class="input_item">
 					<div>
 						<img src="images/2.jpg" width="40px" height="40px" class="circle">
@@ -133,49 +139,49 @@
 				<div class="main_center_item column">
 
 					<div class="main_center_subitem border">
-						<div class="user_photo">
+						<div class="user_photo mainDivPaddingLeft">
 							<img src="images/2.jpg" width="50px" height="50px" class="circle">
 						</div>
 						<div class="main_center_subitem column tweet">
-							<div><span>満島ひかり</span><span>@mitsushimahikari 1分前</span></div>
-							<div>満島ひかり、可愛すぎワロタ</div>
-							<div class="footer_item flex_incline">
-								<a href="">
+							<div class="mainDivPaddingLeft"><span class="tweetUserName">満島ひかり</span><span class="tweetUserName">@mitsushimahikari 1分前</span></div>
+							<div class="mainDivPaddingLeft tweetFont">満島ひかり、可愛すぎワロタ</div>
+							<div class="flex_incline mainDivPaddingLeft">
+								<a href="" class="footerItem">
 								<i class="far fa-comment">1,000</i>
 								</a>
-								<a href="">
+								<a href="" class="footerItem">
 								<i class="far fa-heart"></i>
 								</a>
-								<a href="">
+								<a href="" class="footerItem">
 								<i class="fas fa-retweet"></i>
 								</a>
-								<a href="">
+								<a href="" class="footerItem">
 								<i class="far fa-envelope"></i>
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="main_center_subitem border">
-						<div class="user_photo">
+						<div class="user_photo mainDivPaddingLeft">
 							<img src="images/2.jpg" width="50px" height="50px" class="circle">
 						</div>
 						<div class="main_center_subitem column tweet">
-							<div><span>満島ひかり</span><span>@mitsushimahikari 1分前</span></div>
-							<div>
+							<div class="mainDivPaddingLeft"><span class="tweetUserName">満島ひかり</span><span class="tweetUserName">@mitsushimahikari 1分前</span></div>
+							<div class="mainDivPaddingLeft tweetFont">
 								満島ひかり、美しすぎワロタ
 								<img src="images/4.jpg" width="480">
 							</div>
-							<div class="footer_item flex_incline">
-								<a href="">
+							<div class="footer_item flex_incline mainDivPaddingLeft">
+								<a href="" class="footerItem">
 								<i class="far fa-comment"></i>
 								</a>
-								<a href="">
+								<a href="" class="footerItem">
 								<i class="far fa-heart">1,000</i>
 								</a>
-								<a href="">
+								<a href="" class="footerItem">
 								<i class="fas fa-retweet"></i>
 								</a>
-								<a href="">
+								<a href="" class="footerItem">
 								<i class="far fa-envelope"></i>
 								</a>
 							</div>
@@ -184,36 +190,36 @@
 				</div>
 			</div>
 
-			<div class="main_right_item column right_position">
-				<div class="main_right_item userTitle">
+			<div class="main_right_item column mainRightPosition">
+				<div class="main_right_item userTitle alignCenter">
 					<h4>おすすめユーザー</h4>
-					<div class="flex_row">
-						<a href="" class="blue">・更新</a>
-						<a href="" class="blue">・すべて見る</a>
+					<div class="flex_row alignCenter">
+						<a href="" class="blue blueLink">・更新</a>
+						<a href="" class="blue blueLink">・すべて見る</a>
 					</div>
 				</div>
-				<div class="user_info flex_row">
-					<div>
-						<img src="images/2.jpg" width="50px" height="50px" class="circle">
+				<div class="user_info flex_row alignCenter">
+					<div class="alignCenter">
+						<img src="images/2.jpg" class="circle userInfoIcon">
 					</div>
-					<div class="user_name column">
-						<div>
+					<div class="user_name column alignCenter">
+						<div class="userNamePosition">
 							<h5>ひかり<span> @hikari</span></h5>
 						</div>
-						<div>
+						<div class="userNamePosition">
 							<button class="followButton eclipse">フォローする</button>
 						</div>
 					</div>
 				</div>
-				<div class="user_info flex_row">
+				<div class="user_info flex_row alignCenter">
 					<div>
-						<img src="images/4.jpg" width="50px" height="50px" class="circle">
+						<img src="images/4.jpg" width="50px" height="50px" class="circle userInfoIcon">
 					</div>
-					<div class="user_name column">
-						<div>
+					<div class="user_name column alignCenter">
+						<div class="userNamePosition">
 							<h5>みつしま<span> @mistushima</span></h5>
 						</div>
-						<div>
+						<div class="userNamePosition">
 							<button class="followButton eclipse">フォローする</button>
 						</div>
 					</div>
@@ -221,22 +227,16 @@
 
 				<div class="gray_space"></div>
 
-				<div class="main_right_item ad">
+				<div class="main_right_item ad alignCenter">
 					© 2018 Twitter Twitterについて<br>ヘルプセンター 規約 プライバシーポリシー<br>クッキー広告について ブランド ブログ<br> ステータス アプリ連携 採用情報<br> マーケティング 広告掲載方法 開発者
 				</div>
 				<div>
-					<a href="" class="blue">
-						<i class="fas fa-link blue_link"> Twitter広告</i>
+					<a href="" class="blue adLink">
+						<i class="fas fa-link"> Twitter広告</i>
 					</a>
 				</div>
-
 			</div>
 
-		</div>
-
-
-		<div class="user_icon">
-			<img src="images/2.jpg" width="70px" height="70px" class="circle">	
 		</div>
 
 	</main>

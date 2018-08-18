@@ -3,7 +3,7 @@ header {
 	background: white;
 	height: 46px;
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 100px;
 	box-sizing: border-box;
 }
 
@@ -15,26 +15,12 @@ img {
 	object-fit: cover;
 }
 
-#headerPosition {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-}
-
 .circle {
 	border-radius: 50%;
 	vertical-align: middle;
 }
 .eclipse {
 	border-radius: 25px;
-}
-
-.headerLeftPosition {
-	margin-right:180px;
-}
-
-.headerRightPosition {
-	margin-left:180px;
 }
 
 .mainLeftPosition {
@@ -78,6 +64,15 @@ img {
 }
 
 /*---------------header---------------*/
+
+#headerPosition {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 .header_item {
 	display: flex;
@@ -165,11 +160,12 @@ img {
 
 /*---------------main---------------*/
 .main_container {
-	padding-top: 15px;
+	padding: 15px 100px;
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	width: 100%;
 	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 /*---------------left---------------*/
@@ -257,12 +253,14 @@ img {
 
 .user_icon {
 	position: relative;
-	top: 60px;
-	left: -590px;
+	top: -340px;
+	left: -100px;
 	width: 0px;
 	height: 0px;
 	margin:0;
 	padding:0;
+	display: inline-flex;
+	justify-content: center;
 }
 
 .leftUserIcon {
@@ -274,8 +272,8 @@ img {
 
 /*---------------center---------------*/
 .user_photo {
-	margin-top: 5px;
-	margin-left: 0px;
+	padding-top: 5px;
+	margin -left: 0px;
 }
 
 .main_center_item {
@@ -305,8 +303,7 @@ img {
 }
 
 .tweetInput {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 0 10px;
 	border-radius: 10px;
 	width: 500px;
 	height: 30px;
@@ -381,6 +378,11 @@ img {
 	height: 45px
 }
 
+.userId {
+	font-size: 12px;
+	font-weight: normal;
+}
+
 .blueLink {
 	font-size: 10px;
 	text-decoration: none;
@@ -394,10 +396,14 @@ img {
 .followButton {
 	color: #1DA1F2;
 	border-style: none;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Hiragino" "Kaku" "Gothic Pro",sans-serif;
 	outline: 0;
 	border: 1px solid #1DA1F2;
 	height: 30px;
-	width: 120px;
+	width: 100px;
+	margin-bottom: 10px;
 }
 
 .followButton:hover {
@@ -434,16 +440,12 @@ img {
 }
 
 .ad + div {
-	margin-left:20px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	padding:15px 0 20px 15px;
 }
 
 .adLink {
 	font-size: 12px;
 }
-
-
 /*---------------right--------------*/
 
 /*---------------main---------------*/
